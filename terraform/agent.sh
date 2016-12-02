@@ -4,7 +4,7 @@ if [ $# -eq 0 ]
     echo "No hostname supplied"
     exit
 fi
-env=$1
+env=$agent
 echo $env
 hostname=`hostname`
 apt-get update -y
