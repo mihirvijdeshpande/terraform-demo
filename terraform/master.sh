@@ -1,10 +1,5 @@
 #!/bin/bash
-if [ $# -eq 0 ]
-  then
-    echo "No hostname supplied"
-    exit
-fi
-env=$puppet
+env="puppet"
 echo $env
 hostname=`hostname`
 apt-get update -y
