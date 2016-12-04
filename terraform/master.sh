@@ -4,8 +4,8 @@ echo $env
 hostname=`hostname`
 apt-get update -y
 apt-get upgrade -y
-wget https://apt.puppetlabs.com/puppetlabs-release-pc1-xenial.deb
-dpkg -i puppetlabs-release-pc1-xenial.deb
+wget https://apt.puppetlabs.com/puppetlabs-release-pc1-trusty.deb
+dpkg -i puppetlabs-release-pc1-trusty.deb
 apt update -y
 apt-get -y install puppetmaster
 sed -i "s/$hostname/$env/g" /etc/hostname
