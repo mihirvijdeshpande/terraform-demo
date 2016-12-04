@@ -4,7 +4,7 @@ echo $env
 hostname=`hostname`
 apt-get update -y
 apt-get upgrade -y
-wget https://apt.puppetlabs.com/puppetlabs-release-pc1-trusty.deb
+wget https://apt.puppetlabs.com/puppetlabs-release-trusty.deb
 dpkg -i puppetlabs-release-pc1-trusty.deb
 apt update -y
 apt-get -y install puppetmaster
